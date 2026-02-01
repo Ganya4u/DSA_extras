@@ -8,7 +8,9 @@ public class Bubble {
 
         for (int i = 0 ; i< n-1 ; i++){
             for(int j=0 ; j<n-i-1 ; j++){
-
+                
+      // Swap if elements are in wrong order
+                
                 if(arr[j]>arr[j+1]){
                     int temp = arr[j];
                     arr[j]=arr[j+1];
@@ -25,9 +27,12 @@ public class Bubble {
 
         bubblesort(arr);
 
+        // Print sorted array
+        
         for (int num : arr) {
             System.out.print(num + " ");
         }
 
     }
 }
+
